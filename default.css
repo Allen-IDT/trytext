@@ -614,7 +614,7 @@ ul.contact li a.icon-rss:before {
 #featured-wrapper {
     overflow: hidden;
     /* padding: 6em 0em; */
-    padding: 2em 0em;
+    /* padding: 2em 0em; */
     background: #383838;
     text-align: center;
 }
@@ -897,4 +897,10 @@ ul.contact li a.icon-rss:before {
 
 #extra2 #ebox2 {
     float: right;
+}
+
+/* c-1 */
+
+.seop1:active{
+    color: red;
 }

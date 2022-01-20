@@ -1,0 +1,120 @@
+@media screen and (max-width: 1300px) {
+    .menu {
+        left: 19% !important;
+        margin-top: 5%;
+        right: 0% !important;
+    }
+    #header {
+        height: 130px !important;
+    }
+    .rwdthree {
+        margin-left: 2% !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .rwdone {
+        float: none !important;
+        width: 100% !important;
+    }
+    .rwdtwo {
+        float: none !important;
+        width: 100% !important;
+    }
+    .rwdthree {
+        margin-left: 0 !important;
+        position: initial !important;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .rwdthree {
+        margin-left: 3% !important;
+    }
+    #extra {
+        padding: 1em 0em 5em 0em !important;
+    }
+    .one0042 {
+        display: inherit !important;
+        right: 0px !important;
+        left: 12% !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #colum2 {
+        float: none !important;
+    }
+    #colum1 {
+        float: none !important;
+        /* margin-top: -28% !important;
+padding-left: 23.5% !important; */
+    }
+}
+/* @media screen and (max-width: 920px) {.rwdtwo {
+float: none !important;
+width: 100% !important;
+}
+
+.rwdthree {
+margin-left: 0 !important;
+position: initial !important;
+}} */
+
+@media screen and (max-width: 700px) {
+    .c-4 {
+        float: none !important;
+        width: 150px !important;
+    }
+    #header-wrapper {
+        padding-bottom: 12% !important;
+    }
+    #colum3 {
+        float: none !important;
+    }
+    #colum1 {
+        margin-top: 0% !important;
+        padding-left: 0% !important;
+    }
+    #menu {
+        top: 25% !important;
+    }
+}
+/* @media only screen and (max-width: 700px) {} */
+
+@media screen and (max-width: 600px) {
+    .c-3 {
+        float: none !important;
+        width: 170px !important;
+    }
+    #header-wrapper {
+        padding-bottom: 24% !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .c-2 {
+        float: none !important;
+    }
+    .c-1 {
+        float: none !important;
+    }
+    #header-wrapper {
+        padding-bottom: 50% !important;
+    }
+    .rwdone {
+        float: none !important;
+    }
+    #menu {
+        top: 40% !important;
+    }
+    .phone {
+        width: 320px !important;
+    }
+    .phtwo {
+        width: 320px !important;
+    }
+    .phthree {
+        width: 320px !important;
+    }
+}

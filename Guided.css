@@ -1,0 +1,35 @@
+body{
+    background-color: white;
+}
+.pas{
+    position: inherit;
+    padding: 10% 35% 20% 40%;
+    display: grid;
+}
+.wh{
+    margin-bottom: 1%;
+    height: 20px;
+}
+.as:last-child{
+    margin-top: 2%;
+    background-color: #00A8FF;
+    color: white;
+    height: 30px;
+}
+.as{
+    width: 100%;
+}
+.pas p{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.red a{
+    float: right;
+    padding: 2%;
+    /*text-decoration: none底線拿掉*/
+    text-decoration: none;
+}
+.red a:hover{
+    text-decoration: underline;
+}

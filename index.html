@@ -19,146 +19,24 @@ Released   : 20140331
     <meta name="description" content="" />
     
     <link href="default.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
-    <link rel="stylesheet" href="me.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <style>
-        @media screen and (max-width: 1300px) {
-            .menu {
-                left: 19% !important;
-                margin-top: 5%;
-                right: 0% !important;
-            }
-            #header {
-                height: 130px !important;
-            }
-            .rwdthree {
-                margin-left: 2% !important;
-            }
-        }
-        
-        @media screen and (max-width: 1200px) {
-            .rwdone {
-                float: none !important;
-                width: 100% !important;
-            }
-            .rwdtwo {
-                float: none !important;
-                width: 100% !important;
-            }
-            .rwdthree {
-                margin-left: 0 !important;
-                position: initial !important;
-            }
-        }
-        
-        @media screen and (max-width: 1100px) {
-            .rwdthree {
-                margin-left: 3% !important;
-            }
-            #extra {
-                padding: 1em 0em 5em 0em !important;
-            }
-            .one0042 {
-                display: inherit !important;
-                right: 0px !important;
-                left: 12% !important;
-            }
-        }
-        
-        @media screen and (max-width: 1000px) {
-            #colum2 {
-                float: none !important;
-            }
-            #colum1 {
-                float: none !important;
-                /* margin-top: -28% !important;
-        padding-left: 23.5% !important; */
-            }
-        }
-        /* @media screen and (max-width: 920px) {.rwdtwo {
-        float: none !important;
-        width: 100% !important;
-      }
-
-      .rwdthree {
-        margin-left: 0 !important;
-        position: initial !important;
-      }} */
-        
-        @media screen and (max-width: 700px) {
-            .c-4 {
-                float: none !important;
-                width: 150px !important;
-            }
-            #header-wrapper {
-                padding-bottom: 12% !important;
-            }
-            #colum3 {
-                float: none !important;
-            }
-            #colum1 {
-                margin-top: 0% !important;
-                padding-left: 0% !important;
-            }
-            #menu {
-                top: 25% !important;
-            }
-        }
-        /* @media only screen and (max-width: 700px) {} */
-        
-        @media screen and (max-width: 600px) {
-            .c-3 {
-                float: none !important;
-                width: 170px !important;
-            }
-            #header-wrapper {
-                padding-bottom: 24% !important;
-            }
-        }
-        
-        @media screen and (max-width: 500px) {
-            .c-2 {
-                float: none !important;
-            }
-            .c-1 {
-                float: none !important;
-            }
-            #header-wrapper {
-                padding-bottom: 50% !important;
-            }
-            .rwdone {
-                float: none !important;
-            }
-            #menu {
-                top: 40% !important;
-            }
-            .phone {
-                width: 320px !important;
-            }
-            .phtwo {
-                width: 320px !important;
-            }
-            .phthree {
-                width: 320px !important;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./MenuRWD.css">
 </head>
 
 <body style="font-family: Microsoft JhengHei;">
 
-    <div id="header-wrapper" style="background-color:#0079c1;">
+    <!-- <div id="header-wrapper" style="background-color:#0079c1;position: fixed;width: 100%;"> -->
+    <div id="header-wrapper" style="background-color:#0079c1;width: 100%;">
         <div id="header" class="container">
-            
+            <p style="color: white; font-size: xx-large;padding-left:25%;">Allen的網站</p>
             <div id="menu" class="menu">
                 <ul>
                     <li class="c-0"><a href="#" accesskey="1" title="" style="color: white;">首頁</a></li>
-                    <li class="c-1"><a href="https://www.youtube.com/"  accesskey="2" title="" style="color: white;" target=" _blank">導覽說明</a></li>
-                    <li class="c-2"><a href="https://www.youtube.com/" accesskey="3" title="" style="color: white;" target=" _blank">帳號申請</a></li>
-                    <li class="c-3"><a href="https://www.youtube.com/" accesskey="4" title="" style="color: white;" target=" _blank">服務申請</a></li>
-                    <li class="c-4"><a href="https://www.youtube.com/" accesskey="5" title="" style="color: white;" target=" _blank">品質分組</a></li>
+                    <li class="c-1"><a href="./HTMLindex.html" accesskey="2" title="" style="color: white;" target=" _blank">HTML功能</a></li>
+                    <li class="c-2"><a href="https://www.youtube.com/" accesskey="3" title="" style="color: white;" target=" _blank">CSS功能</a></li>
+                    <li class="c-3"><a href="https://www.youtube.com/" accesskey="4" title="" style="color: white;" target=" _blank">Javascript功能</a></li>
+                    <li class="c-4"><a href="https://www.youtube.com/" accesskey="5" title="" style="color: white;" target=" _blank">Jquery功能</a></li>
+                    <li class="c-4"><a href="./Guided instructions.html" accesskey="5" title="" style="color: white;" target=" _blank">登出</a></li>
                 </ul>
             </div>
 
@@ -166,20 +44,22 @@ Released   : 20140331
     </div>
 
     <!-- 第一張照片 -->
+    <div>
     <div id="header-featured" style="background-color:#e9f5f8;">
         <div style="padding: 2% 20% 2% 20%;" class="photodivone" id="photodiv">
             <div>
-                <img src="./images/1.jpg" alt="照片" title="照片" style="width:350px" class="phone">
+                <a name="HTML"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA8FBMVEX////kTSbxZSnr6+sAAADkSR7pdFzrWSjr7/DHx8fxYyX39/fkQxPwXBT4v63oq6D3rZXkPwTyc0Dq0Mzr8/TwVwDa2tpTU1PnmInlXDv97emoqKh7e3vlb1biOABoaGgdHR24uLiEhITjQg82NjZwcHDsXCjnaU3ytKntlIP1x7/98vD53tnxYB/wXBL2p47qfWfwpZf31M7zhFwqKir1w7rsiXbq1ND1l3jzua/noZTpv7fr4+HmYEHpx8H42dPze03lVC+Tk5NDQ0Ourq7qUBPmiXj0jGj4uaX0km/saUD2oYTqSwDybzj5ybrydkccrNDdAAAK80lEQVR4nO2dcVvaSBfFoxCkgNqsYJG3Ylt2q6io2Kq1ai3t1rbbrfv9v81LCEMSmHuZS86EyMP5S/Nows+JM4e55wbHkelZXmlvdGx0KJ/rf/c6T+tN/MffR8/8Mjy+7X//YvTtM+FrTCYoYf5LeOLtyOEFIhz8QqD3C0r4Qp3jf9Gji0SYfx2cohw7uFCE+eAUewtM+CZ+1gUkHPzOq4Um/Oo4X8YOPWHClxrC/Ovy+JGMEOo0WN7KQ4ULwMvRMR3hqxfjR7JOqBQljIo9w5LQvpaEES0J86/+jP7u+9B7LwxhPvqOKb+9iITOm/DrvYixWSDCyNflBSUcne61kz3CP3PbgXIJCJ2/gq/8d8Ik4Yu9qL44dhUh1LxkOeHwuzJHGNdfT41wcMK/nQUm9N/efx18sbCEZfVrC0vo/D2cOxaXUGlJuCQEKdyFeaV5yQRh/EVRhOHxAeFXgnDPsavcs5FGx8JDZf2PbsdOoTmD7jTbz/SKn2yppZZaaqmlllpqqaWWeiJq7BeyrP1GYsKjpptlNY+SD2JzJctqJgd03HlDsHIBhPtZRnT3AYRnmSY8AxC2M03YBhB2K/PGYFTpAgivW/PGYNS6BhAeevPGYOQdAgjvM014DyBsZHnJbyY3bb5tmzcGI4RpcxzwXbqWVNGTeQhABwy4mlBvY6eDEN5Bl/zEhNExdO8ghIUMExYghA8ZJnyAEGJtW2LC6Mkgps1xDqC2DUrYOoAQXmSY8AJCeA5dEKGE3jmE8DjDhMcQQqxtgxJiTBvYtiUljFkajGkD77ZBCRE7bb52kIhJCWML/g6IEGrboIQY0+Y4l5klvAQR1pG2LSlh9FyVOojwILOEGNMGtm1IQpBpY22bW5Hq28m6UCWSEGTaONvmPmxKdbAh1fcSSYgxbZxtq2xWi0KVp19vTL86FCHKtDFF0kq9mBNKTvg9ShizNIjy6BRC97Jqn/C/kn3CHklYSIHwJHqTxnZLezDCXcrUuHcpENYoQncXRkjbtop9wiOaEGXaONvWtD/THMcIY39elGnj9hObt9YJz09IQsxeoi+6DOxdWSd8JAkhBeBAdBnY+yS9TcWEP9ZJS4MoAAeibVvrxjrhKWlpYKaNKwNXNq0TfqBNG6IAHKgMtG1iwne0pZGvraTImUZu28Sv6jdJ2MIBIm2bmLBDEuJMG5Pek9s2MSFpSyGpPSUmvWebkDFtiNSeEp3eawkBxYS0aYOk9pRo2+bpbBv3Hl966fs0TJvUthU367S6z2X6SS6HQNMmtW3FtsfstXVkO20xQFumjUvv6Wxb8SOzhZxsvzRGiEjtKclsW5GLpOIIgaaN3U/U2LbijS3CuGmD7SX6om3bw+SCWNxiqsY4QqRpY9J7Wtt2lQohJrWnRKb39LaNyTYkIrSQ2lNibJvm7VORKaniCJGmjUvveZohrO5YIoyeCJTaU5LttlWZTiIYIdS0cek9nW2rMjc1jBCU2lM6pAk1tq3KdBLBCKGmjSsDS20bjhBVAA7UIAm1tm0zDUKkaUPatiSEFk0bVyQV2jYcIRaQMaZC2wYjxNpSzrbtawhv7RBaNG1ces/VEBYrVHf5ylpJJJoQldpTosvAuiJp9W6H0j9/iFQiCXEF4EBMGVi321YlJbssUwDGmjYuvScsksr2S+nyKCy1p0Sn94RFUhnhBlkehaX2lGS2DUb4nC4AY00bVwYWFkllhHSmDVgADiSzbTBCescbbdqEtg1G+DmFTJsSveKfWSRcJQlRrRahyKYLYZFURhibaKy0WoQi03vCIqmIsJxGak+JSe9JAGWEjTRSe0q0bdMWSTGEqaT2lOiNCZltExEyqT20aWPLwCLbJiLcSCO1p4SybSJCJrWHNm042yYiTNG0sWVgkW0TETKmDbuX6KvMNM5IFkQRIW3aPGBqT4mcS/u2zbxlRkZIp/bwpo1L791dbZnruEFId03StEFTe0p0xcz1BPq3Rkh3TdrSIFN7SqBeWWK/tPSf5pKpmjbHaWM6SSnCd5pLMqYNmdpTAj3EhSDsfNBcMpVWi1CgZ+9RhKeaS6bSahEK9Ow9gnD9h+aSqbRahAI9e48gPHnUXJJptUCm9pRAz96jCHVOOpVWi1DcQ1y0VSYRYU3npJlWC/heoi+asFfYnRBlEChC3UumTRt+L9EX7WkKmhoTVSSl7lLdFckFH5zaU6JtW09QBtYTljoiQiumjUvveboysOguLf3WXDClVotQdNCpqXkfWO2JCGWmDdpqEUrWdEGl9/SEWTBtbHpvS5NtI25qgjADpo2zbbrdtioRSdUTZsG0sfuJ1+bpPT1hFkwbu9v20Ty9RxBmwLSh0nt6Qr1pox9qYsW0Mc/e0/XKFj/pf5wg1A3KH/Reoh1Apuli1zy9RxDqrlciCe2YNi69t6OzbfqbWkBI98eiU3tKwvSegDAbpo1rumhNAuaqgrk0G6ZNWgauFpotzZ9kkrDUOan90lwupf7YqGS2LVe9vWn3JijXJuh+n+prgYxpwxeAA4nTe8X+G+HrS9erRCgjhJ312uqHR3JpSzG1pySzbSPK4tbHgjeiHBKW1msn3zdYa3KaZgE40Kxl4GKxmvtUvwtu2LXg1vz8fKq1pE2bhQJwoCTpvT7l7c1Dz6t8o//xxpS+aeNsm1EZuP9vebXZfjR1zfST6GyZNn63zYBwQGl+tTRTe0qI9J55lZu2NPjUnhLzyGTjOIYxIWPa0K0WoegysK5XNiFhygXgQMKmi2SEjGnDp/aUEE0XxoQptlqEQjRdGBPOwbRh0nvGhCm2WoTibFvVENGYMNXUnhJTBu61b3JGkGaE5cdfUb60TBv7ubJuq7m7eVWdSmlAePz8c+2kwxDaA5zyybluxVt5uLmtFjnKKYSNx5/rtbGHlKdnS5n0XmQovf2PW0V6KDnC89Pf/cGbwFtNIbWnxDRdxIbSO7umhpIibGy8I+gmLA2+1SKU8Sfn9v8rd+qfdHOPjvCoP6/Uxp7qxRDaM22yT7roD2WrMDn3TBAG8wo1eJrFwqJpk6f33EpzfO6JETY2ftY088oUQlt7ib5mSe+NzT0hYTCvTKcbJ7Ro2mZO7/VvWPdyOPcEhI0f3LzCE1oqAAdK8AFlau4ZzCsdo1uTIrRn2pKm9/y556xrMK/whJYKwIHoRyYbU34T062maNqYR5wYa6Ynf1h9qElcvfkQxhZ8m6aNS++lR2gntadkbNssEtoqAAdiHlNmkTD2b2il1SJU8qYLMeHa2AmsmjZE04WI8O043oq11J5S8qYLY0IdnS+rpg3RdGFG+JY+gaXUnlLypovphNTgDWXVtCE+OXcKITN4itDiXqIvmzPNlMEbyq5pY9J7CQnN6AayTEim95IQCvDspfaUCs1KMsZxQgndYOPHXgF4qPPujjavNhOhkM7zdg9svsEf6eji0p15KNdmHLxWs1e3V1XT6Hhzv+nNYlLXZhu8s2u7y6Beh5rooQGhcPC85n7Xro1h1bg+a3kJ5x6Gzt9QPrS8whvovnuXaO6h6LxmIZ15xURHFw+zzz06PH9zNdV5xUTHB4XZ5p5xuopXmc+8YqLz+gxzTwzPn1cyc2vq1Z97KrPNPf1bc6V9aOHJOhZ03+0vliJIf8krHGT11tTq6LDtmt6w2ZxXTNQ4iCTYycFrupcX81/yZtd5nTHqT2FeMVHfqGuG8inNKyY6js0987PSVlUeGvX+4N11n+S8YqLG9WWvnbKV/j/qPruRA16yXwAAAABJRU5ErkJggg=="
+                alt="照片" title="照片" style="width:30%" class="phone"></a>
                 <div style="width: 50%; float: right;" class="rwdone">
-                    <div style="font-size: 2em; font-weight: 1000; color: black;">Hello</div>
+                    <div style="font-size: 2em; font-weight: 1000; color: black;">HTML</div>
                     <br>
-                    <div style="color: black; font-size: 21px;">提供「地圖方式」及「清單方式」檢索、查詢、介接、下載。</div>
+                    <div style="color: black; font-size: 100%;">HTML 是一種非常簡單的語言，由元素所組成。元素可以賦予文字片段不同的意義 (比方說，將它們描述成段落、項目清單，或是表格的一部分)、將文件組織成不同的邏輯區段 (如標頭(header)、三行的內文，或是導覽目錄)，以及在網頁中嵌入圖片或影片等內容。在這個主題中我們將介紹前面兩項，並介紹基本概念以及語法以讓你了解 HTML。</div>
                     <div style="margin-top: 10%;" class="photoone">
                         <div style="display:inline; border: 1px solid #73b2ff; padding: 1.5%; background-color: white;" class="d-1">
-                            <a  style=" color:#73b2ff; text-decoration: none;" class="d-2" target="_blank">地圖方式檢索</a>
+                            <a href="https://developer.mozilla.org/zh-TW/docs/Learn/HTML/Introduction_to_HTML" style=" color:#73b2ff; text-decoration: none;" class="d-2" target="_blank">HTML介紹</a>
                         </div>
-                        <div style="display:inline; border: 1px solid #73b2ff; padding: 1.5%; background-color: #0079c1;" class="d-2">
-                            <a  style=" color: white; text-decoration: none;" target="_blank">清單方式檢索</a></div>
+                        <!-- <div style="display:inline; border: 1px solid #73b2ff; padding: 1.5%; background-color: #0079c1;" class="d-2">
+                            <a  style=" color: white; text-decoration: none;" target="_blank">清單方式檢索</a></div> -->
                     </div>
                 </div>
 
@@ -192,15 +72,18 @@ Released   : 20140331
     <div id="header-featured" style="background-color:white;">
         <div style="padding: 2% 20% 2% 20%;" class="photodivtwo">
             <div>
-                <img src="./images/1.jpg" alt="照片" title="照片" style="width:350px;" class="phtwo">
+                <img src="data:image/png;base64,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"
+                 alt="照片" title="照片" style="width:30%;" class="phtwo">
                 <div style="width: 50%; float: right;" class="rwdtwo">
-                    <div style="font-size: 2em; font-weight: 1000; color: black;">Hello應用專區</div>
+                    <div style="font-size: 2em; font-weight: 1000; color: black;"><a name="CSS">CSS</a></div>
                     <br>
-                    <div style="color: black; font-size: 21px;">
-                        提供「查詢變異點與勘查回報專區」、「事件審核專區」、「成果統計查詢」、「相關說明專區」、「常用工具專區」等專區。</div>
+                    <div style="color: black; font-size: 100%;">
+                        CSS 可以以塑造網站的特殊風格。例如，如果文字喜歡一般的黑色，那麼可以改用紅色標明重點？某段重要內容應該圖片的何處想？ 〈CSS基本概念〉帶你入門</div>
                     <div style="margin-top: 5%;" class="Integration">
                         <div style="display:inline; border: 1px solid #73b2ff; padding: 1.5%; background-color: #0079c1;" class="d-2">
-                            <a  style=" color: white; text-decoration: none;" target=" _blank">環境事件應用專區</a></div>
+                            <a href="https://developer.mozilla.org/zh-TW/docs/Learn/Getting_started_with_the_web/CSS_basics"
+                              style=" color: white; text-decoration: none;" target=" _blank">CSS介紹</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -211,187 +94,33 @@ Released   : 20140331
     <div id="header-featured" style="background-color:#e9f5f8;">
         <div style="padding: 2% 20% 3% 20%;" class="photodivthree">
             <div>
-                <img src="./images/1.jpg" alt="照片" title="照片" style="width:350px;" class="phthree">
-                <div style="position: absolute; margin-left:7%;display: inline;" class="rwdthree">
-                    <div style="font-size: 2em; font-weight: 1000; color: black;">Hello</div>
+                <img src="data:image/jpeg;base64,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"
+                 alt="照片" title="照片" style="width:30%;" class="phthree">
+                <div style="position: absolute; margin-left:2.5%;display: inline; padding-left: 9.5%;" class="rwdthree">
+                    <a name="JS"><div style="font-size: 2em; font-weight: 1000; color: black;">Javascript、JQuery</div></a>
                     <br>
-                    <div style="color: black; font-size: 21px;">提供立即可用之工具</div>
+                    <div style="color: black; font-size: 100%;">Javascript、JQuery是人的動作行為</div>
+                    <div style="margin-top: 5%;" class="Integration">
+                        <div style="display:inline; border: 1px solid #73b2ff; padding: 1.5%; background-color: #0079c1;" class="d-2">
+                            <a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript"
+                              style=" color: white; text-decoration: none;" target=" _blank">Javascript介紹</a>
+                        </div>
+                        <div style="display:inline; border: 1px solid #73b2ff; padding: 1.5%; background-color: #0079c1; margin-left: 5%;" class="d-2">
+                            <a href="https://ithelp.ithome.com.tw/articles/10236562"
+                              style=" color: white; text-decoration: none;" target=" _blank">Jquery介紹</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    </div>
-
-
-
-
-    <!-- 底下第三層 四個img圖片 -->
-    <div id="wrapper">
-        <div id="featured-wrapper" style="background-color: #e9f5f8;">
-            <div id="featured" class="container" style="margin-left: 20%;">
-                <!-- 1 -->
-                <div class="column1">
-                    <div><img src="./images/1.jpg" alt="Local Perspective Map View" title="照片" style="width: 100%;">
-                    </div>
-                    <div style=" background-color: white;">
-                        <div class="title" style="color: #73b2ff; font-size: 24px; font-weight: 400; padding-top: 7%; padding-left: 3%;">
-                            Hello
-                        </div>
-                        <div style="width: auto; margin: 7%;">
-                            <p style="text-align: left;">將帶有座標之SHP / CSV / KML 檔案，於地圖上展點</p>
-                        </div>
-                        <div style="line-height: 40px;">
-                            <div style=" display: inline;" class="a b-1">
-                                <a target="_blank"  style="text-decoration: none;">使用說明</a>
-                            </div>
-                            <div style="display: inline;" id="backcolor" class="b">
-                                <a target="_blank"  style="text-decoration: none; color: white;">1.樣版檢視</a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-                <!-- 2 -->
-                <div class="column1" id="colum3">
-                    <div><img src="./images/1.jpg" alt="Local Perspective Map View" title="照片2" style="width: 100%;">
-                    </div>
-                    <div style=" background-color: white;">
-                        <div class="title" style="color: #73b2ff; font-size: 24px; font-weight: 400; padding-top: 7%; padding-left: 3%;">
-                            Hello
-                        </div>
-                        <div style="width: auto; margin: 7%;">
-                            <p style="text-align: left;">將帶有座標之SHP / CSV / KML 檔案，於地圖上展點</p>
-                        </div>
-                        <div style="line-height: 40px;">
-                            <div style=" display: inline;" class="a b-2">
-                                <a target="_blank"  style="text-decoration: none;">使用說明</a>
-                            </div>
-                            <div style="display: inline;" id="backcolor" class="b">
-                                <a target="_blank"  style="text-decoration: none; color: white;">2.樣版檢視</a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-                <!-- 3 -->
-                <div class="column1" id="colum2">
-                    <div><img src="./images/1.jpg" alt="Survey123 Mobile View" title="照片3" style="width: 100%;">
-                    </div>
-                    <div style=" background-color: white;">
-                        <div class="title" style="color: #73b2ff; font-size: 24px; font-weight: 400; padding-top: 7%; padding-left: 3%;">
-                            Hello
-                        </div>
-                        <div style="width: auto; margin: 7%;">
-                            <p style="text-align: left;">檢核帶有座標之CSV檔位置，如呈現於海上，將顯示錯誤筆數與資訊</p>
-                        </div>
-                        <div style="line-height: 40px;">
-                            <div style=" display: inline;" class="a b-3">
-                                <a target="_blank"  style="text-decoration: none;">使用說明</a>
-                            </div>
-                            <div style="display: inline;" id="backcolor" class="b">
-                                <a target="_blank"  style="text-decoration: none; color: white;">3.樣版檢視</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div style="width: auto;">
-                    <!-- 4 -->
-                    <div class="column1" id="colum1">
-                        <div><img src="./images/1.jpg" alt="Local Perspective Map View" title="照片4" style="width: 100%;">
-                        </div>
-                        <div style=" background-color: white;">
-                            <div class="title" style="color: #73b2ff; font-size: 24px; font-weight: 400; padding-top: 7%; padding-left: 3%;">
-                                Hello
-                            </div>
-                            <div style="width: auto; margin: 7%;">
-                                <p style="text-align: left;">將僅有座標之文字檔，進行地址座標轉換</p>
-                            </div>
-                            <div style="line-height: 40px;">
-                                <div style=" display: inline;" class="a b-4">
-                                    <a target="_blank"  style="text-decoration: none;">使用說明</a>
-                                </div>
-                                <div style="display: inline;" id="backcolor" class="b">
-                                    <a target="_blank"  style="text-decoration: none; color: white;">4.樣版檢視</a>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- 5 -->
-                    <div class="column1" id="colum1" style="padding-top: 3%;">
-                        <div><img src="./images/1.jpg" alt="Local Perspective Map View" title="照片4" style="width: 100%;">
-                        </div>
-                        <div style=" background-color: white;">
-                            <div class="title" style="color: #73b2ff; font-size: 24px; font-weight: 400; padding-top: 7%; padding-left: 3%;">
-                                Hello
-                            </div>
-                            <div style="width: auto; margin: 7%;">
-                                <p style="text-align: left;">將CSV檔數據，自動與縣市鄉鎮整合並視覺化</p>
-                            </div>
-                            <div style="line-height: 40px;">
-                                <div style=" display: inline;" class="a b-5">
-                                    <a target="_blank" style="text-decoration: none;">使用說明</a>
-                                </div>
-                                <div style="display: inline;" id="backcolor" class="b">
-                                    <a target="_blank"  style="text-decoration: none; color: white;">5.樣版檢視</a>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- 6 -->
-                    <div class="column1" id="colum1" style="padding-top: 3%;">
-                        <div><img src="./images/1.jpg" alt="Local Perspective Map View" title="照片4" style="width: 100%;">
-                        </div>
-                        <div style=" background-color: white;">
-                            <div class="title" style="color: #73b2ff; font-size: 24px; font-weight: 400; padding-top: 7%; padding-left: 3%;">
-                                Hello
-                            </div>
-                            <div style="width: auto; margin: 7%;">
-                                <p style="text-align: left;">將文字檔CSV記載地籍，批次轉成座標</p>
-                            </div>
-                            <div style="line-height: 40px;">
-                                <div style=" display: inline;" class="a b-6">
-                                    <a target="_blank" style="text-decoration: none;">使用說明</a>
-                                </div>
-                                <div style="display: inline;" id="backcolor" class="b">
-                                    <a target="_blank" style="text-decoration: none; color: white;">6.樣版檢視</a>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
         <div id="extra" class="container" style="width: 100%;text-align: left; background-color:#e7e7e7;">
             
-            <div style="padding:1% 0px 1% 16%;line-height:38px; font-size: 16px; width: 30%; display: inline-block;">
-                <a  class="colora" id="a-1" style="color: #73b2ff;">資訊安全政策</a><br>
-                <a  class="colora" id="a-2">資訊安全規範(PDF檔)</a><br>
-                <a  class="colora" id="a-3">網站安全政策</a>
+            <div style="padding:1% 0px 1% 20%;line-height:38px; font-size: 16px; width: 30%; display: inline-block;">
+                <a  class="colora" id="a-3">我叫Allen 很高興認識你</a>
             </div>
-
-            <div style="line-height:38px; font-size: 16px; width: 30%; display: inline-block;">
-                <a  class="colora" id="a-4" style="color: #73b2ff;">隱私權保護政策</a><br>
-                <a  class="colora" id="a-5">網站資料開放宣告</a><br>
-                <a  class="colora" id="a-6">意見信箱</a>
-            </div>
-
-            
-
-
         </div>
     </div>
-
     
 
 
